@@ -1,0 +1,84 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $bg-darkgrey;
+}
+
+.footer__nav {
+    @include flex(flex, space-between, baseline);
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $color-white;
+}
+
+.footer__contact-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address {
+    color: $color-white;
+    line-height: 1.71;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer__contact {
+    color: $color-contact-footer;
+    line-height: 1.71;
+    font-style: normal;
+    text-decoration: none;
+
+    transition: color $transition-time $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
+}
+
+.footer__cta {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $color-white;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.subscribe__form {
+    display: flex;
+    gap: 12px;
+}
+
+.subscribe__input {
+    width: 358px;
+    padding: 15px 16px;
+
+    color: $color-white;
+    font-size: 16px;
+    line-height: 1.25;
+
+    background-color: transparent;
+    border: 1px solid rgb(255 255 255 / 0.3);
+    border-radius: $border-radius;
+    outline: none;
+
+    &:focus {
+        border-color: $color-accent;
+    }
+
+    &::placeholder {
+        color: $color-contact-footer;
+    }
+}
+
+.subscribe__btn {
+    @include flex();
+    gap: 10px;
+}

@@ -1,0 +1,113 @@
+.callback__cta {
+    margin-bottom: 12px;
+
+    color: $color-title;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.callback__form {
+    text-align: center;
+}
+
+.callback__label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.callback__field {
+    position: relative;
+}
+
+.callback__input {
+    display: block;
+    width: 100%;
+    padding: 12px 16px 12px 42px;
+    margin-bottom: 10px;
+
+    color: $color-title;
+
+    border: 1px solid $color-border-callback;
+    border-radius: $border-radius;
+    outline: none;
+
+    &:focus {
+        border-color: $color-accent;
+    }
+}
+
+.callback__icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    fill: $color-title;
+
+    .callback__field:focus-within & {
+        fill: $color-accent;
+    }
+}
+
+.callback__textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+
+    color: $color-title;
+
+    border: 1px solid $color-border-callback;
+    border-radius: $border-radius;
+    outline: none;
+    resize: none;
+
+    &:focus {
+        border-color: $color-accent;
+    }
+
+    &::placeholder {
+        color: $color-placeholder;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+    }
+}
+
+.agreement__label {
+    @include flex($type: inline-flex);
+    margin-bottom: 30px;
+
+    line-height: 1.71;
+}
+
+.agreement__checkbox {
+    @include flex($type: inline-flex);
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid $color-title;
+    border-radius: 2px;
+
+    .agreement__input:checked+& {
+        background-color: $color-accent;
+        border: hidden;
+    }
+}
+
+.agreement__icon {
+    fill: $color-white;
+}
+
+.agreement__terms-link {
+    color: $color-accent;
+}

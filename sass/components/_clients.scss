@@ -1,0 +1,22 @@
+.clients__list {
+    @include flex();
+    gap: 30px;
+}
+
+.clients__link {
+    @include flex();
+    width: 170px;
+    height: 92px;
+
+    fill: $color-icon;
+    border: 1px solid $color-icon;
+    border-radius: $border-radius;
+
+    transition: fill $transition-time $cubic-bezier, border-color $transition-time $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        fill: $color-accent;
+        border-color: $color-accent;
+    }
+}

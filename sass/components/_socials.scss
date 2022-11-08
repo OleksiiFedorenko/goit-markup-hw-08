@@ -1,0 +1,28 @@
+.socials__list {
+    @include flex();
+    gap: 10px;
+}
+
+.socials__link {
+    @include flex();
+    width: 44px;
+    height: 44px;
+
+    fill: $color-icon;
+    background-color: $color-white;
+    border-radius: 50%;
+
+    transition: fill $transition-time $cubic-bezier,
+        background-color $transition-time $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        fill: $color-white;
+        background-color: $color-accent;
+    }
+}
+
+.socials__link--footer {
+    fill: $color-white;
+    background-color: $bg-socials-footer;
+}
