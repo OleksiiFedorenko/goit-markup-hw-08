@@ -1,15 +1,23 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    @include desktop-up {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: $color-title;
+    text-align: center;
+
+    @include desktop-up {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
+    }
 }
