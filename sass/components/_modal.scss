@@ -22,7 +22,7 @@
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 528px;
+    width: calc(100% - 30px);
     padding: 40px;
 
     background-color: $color-white;
@@ -32,6 +32,10 @@
 
     transition: transform $transition-time $cubic-bezier,
         opacity $transition-time $cubic-bezier;
+
+    @include desktop-up {
+        width: 528px;
+    }
 
     .is-hidden & {
         opacity: 0;

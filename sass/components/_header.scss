@@ -4,15 +4,32 @@
 
 .header__nav {
     @include flex();
+
+    @include mobile-only {
+        @include flex(flex, space-between, center);
+    }
+}
+
+.header__logo {
+    padding: 16px 0;
+
+    color: $color-black;
+    
+    @include tablet-up {
+        margin-right: 87px;
+    }
+    
+    @include desktop-up {
+        margin-right: 93px;
+    }
 }
 
 .main-nav {
     @include flex();
-}
 
-.header__logo {
-    margin-right: 93px;
-    color: $color-black;
+    @include mobile-only {
+        display: none;
+    }
 }
 
 .main-nav__list {
@@ -62,6 +79,10 @@
     @include flex();
     margin-left: auto;
     gap: 50px;
+
+    @include mobile-only {
+        display: none;
+    }
 }
 
 .header__contact {

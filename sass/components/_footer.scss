@@ -2,11 +2,29 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    text-align: center;
+
     background-color: $bg-darkgrey;
 }
 
 .footer__nav {
-    @include flex(flex, space-between, baseline);
+    @include desktop-up {
+        @include flex(flex, space-between, baseline);
+    }
+}
+
+.footer__main-nav {
+    margin-bottom: 60px;
+
+    @include desktop-up {
+        margin-bottom: 0;
+    }
+}
+
+.footer__contact-nav {
+    @include mobile-only {
+        margin-bottom: 60px;
+    }
 }
 
 .footer__logo {
@@ -17,7 +35,11 @@
 }
 
 .footer__contact-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @include desktop-up {
+        margin-bottom: 9px;
+    }
 }
 
 .address {
@@ -52,12 +74,15 @@
 }
 
 .subscribe__form {
-    display: flex;
-    gap: 12px;
+    @include desktop-up {
+        display: flex;
+        gap: 12px;
+    }
 }
 
 .subscribe__input {
-    width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
     padding: 15px 16px;
 
     color: $color-white;
@@ -68,6 +93,10 @@
     border: 1px solid rgb(255 255 255 / 0.3);
     border-radius: $border-radius;
     outline: none;
+
+    @include desktop-up {
+        width: 358px;
+    }
 
     &:focus {
         border-color: $color-accent;
@@ -81,4 +110,6 @@
 .subscribe__btn {
     @include flex();
     gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }

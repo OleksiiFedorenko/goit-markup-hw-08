@@ -1,11 +1,23 @@
 .clients__list {
-    @include flex();
+    @include flex;
+    flex-wrap: wrap;
     gap: 30px;
+
+    @include desktop-up {
+        flex-wrap: nowrap;
+    }
+}
+
+.clients__item {
+    flex-basis: calc((100% - 30px) / 2);
+
+    @include desktop-up {
+        flex-basis: calc((100% - 150px) / 6);
+    }
 }
 
 .clients__link {
-    @include flex();
-    width: 170px;
+    @include flex;
     height: 92px;
 
     fill: $color-icon;

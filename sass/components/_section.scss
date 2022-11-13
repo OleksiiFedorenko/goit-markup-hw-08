@@ -1,4 +1,6 @@
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     @include desktop-up {
         padding-top: 94px;
@@ -11,13 +13,14 @@
     margin-bottom: 30px;
 
     color: $color-title;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
 
     @include desktop-up {
-    margin-bottom: 50px;
+        margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+        font-size: 36px;
     }
 }

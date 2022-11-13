@@ -1,16 +1,30 @@
 .benefits__list {
-    display: flex;
-    gap: 30px;
+
+    @include desktop-up {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.benefits__item:not(:last-child) {
+    @include mobile-only {
+        margin-bottom: 30px;
+    }
 }
 
 .benefits__thumb {
-    @include flex();
-    width: 270px;
+
+    @include flex;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 
     background-color: $bg-grey;
     border-radius: $border-radius;
+
+    @include desktop-up {
+        width: 270px;
+    }
 }
 
 .benefits__title {
@@ -22,6 +36,10 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @include mobile-only {
+        text-align: center;
+    }
 }
 
 .benefits__copy {

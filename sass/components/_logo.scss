@@ -2,9 +2,13 @@
     font-family: 'Raleway', '-apple-system', 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui',
         'helvetica neue', 'helvetica', 'Cantarell', 'Ubuntu', 'roboto', 'noto', 'arial', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     text-decoration: none;
+
+    @include desktop-up {
+        font-size: 26px;
+    }
 }
 
 .logo__accent {
