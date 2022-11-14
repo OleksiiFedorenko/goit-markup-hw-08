@@ -6,7 +6,12 @@
 .team__list {
     @include tablet-up {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
+    }
+
+    @include desktop-up {
+        flex-wrap: nowrap;
     }
 }
 
