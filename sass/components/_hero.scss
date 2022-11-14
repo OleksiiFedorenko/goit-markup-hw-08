@@ -6,13 +6,37 @@
     
     background-color: $bg-darkgrey;
     background-image: linear-gradient($bg-overlay-hero, $bg-overlay-hero),
-    url('../images/bg.jpg');
+        url('../images/bg-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
+    @include double-background {
+            background-image: linear-gradient($bg-overlay-hero, $bg-overlay-hero),
+                url('../images/bg-mobile@2x.jpg');
+        }
     
+    @include tablet-up {
+        background-image: linear-gradient($bg-overlay-hero, $bg-overlay-hero),
+            url('../images/bg-tablet.jpg');
+        
+        @include double-background {
+            background-image: linear-gradient($bg-overlay-hero, $bg-overlay-hero),
+                url('../images/bg-tablet@2x.jpg');
+        }
+    }
+
     @include desktop-up {
-    padding-top: 200px;
-    padding-bottom: 200px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        background-image: linear-gradient($bg-overlay-hero, $bg-overlay-hero),
+            url('../images/bg-desktop.jpg');
+
+        @include double-background {
+            background-image: linear-gradient($bg-overlay-hero, $bg-overlay-hero),
+                url('../images/bg-desktop@2x.jpg');
+        }
     }
 }
 

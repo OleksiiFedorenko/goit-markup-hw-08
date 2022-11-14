@@ -5,6 +5,10 @@
     text-align: center;
 
     background-color: $bg-darkgrey;
+
+    @include desktop-up {
+        text-align: left;
+    }
 }
 
 .footer__nav {
@@ -21,6 +25,7 @@
     }
 
     @include desktop-up {
+        justify-content: flex-start;
         margin-bottom: 0;
     }
 }
@@ -28,6 +33,10 @@
 .footer__contact-nav {
     @include mobile-only {
         margin-bottom: 60px;
+    }
+
+    @include desktop-up {
+        margin-right: 93px;
     }
 }
 
@@ -87,7 +96,7 @@
 .subscribe__input {
     width: 100%;
     margin-bottom: 20px;
-    padding: 15px 16px;
+    padding: 14px 16px;
 
     color: $color-white;
     font-size: 16px;
@@ -104,6 +113,7 @@
 
     @include desktop-up {
         width: 358px;
+        margin-bottom: 0;
     }
 
     &:focus {
@@ -116,7 +126,7 @@
 }
 
 .subscribe__btn {
-    @include flex();
+    @include flex;
     gap: 10px;
     margin-left: auto;
     margin-right: auto;

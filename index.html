@@ -142,6 +142,7 @@
             <li>
               <div class="doings__card">
                 <img
+                  srcset="./images/work-1.jpg 1x, ./images/work-1@2x.jpg 2x"
                   src="./images/work-1.jpg"
                   alt="Людина друкує текст з клавіатури
                 на планшеті на робочому місці"
@@ -154,6 +155,7 @@
             <li>
               <div class="doings__card">
                 <img
+                  srcset="./images/work-2.jpg 1x, ./images/work-2@2x.jpg 2x"
                   src="./images/work-2.jpg"
                   alt="Людина однією рукою тримає
                 смартфон, іншу тримає на тачпаді ноутбука, поруч монітор"
@@ -166,6 +168,7 @@
             <li>
               <div class="doings__card">
                 <img
+                  srcset="./images/work-3.jpg 1x, ./images/work-3@2x.jpg 2x"
                   src="./images/work-3.jpg"
                   alt="Людина трмає планшет, на фоні
                 робоче місце: монітор, клавіатура, мишка"
@@ -184,7 +187,21 @@
 
           <ul class="team__list">
             <li class="team__card">
-              <img src="./images/worker-1.jpg" alt="Чоловік в окулярах посміхається" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/worker-1-desktop.jpg 1x, ./images/worker-1-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/worker-1-tablet.jpg 1x, ./images/worker-1-tablet@2x.jpg 2x"
+                />
+                <img
+                  srcset="./images/worker-1-mobile.jpg 1x, ./images/worker-1-mobile@2x.jpg 2x"
+                  src="./images/worker-1-mobile.jpg"
+                  alt="Чоловік в окулярах посміхається"
+                />
+              </picture>
               <h3 class="team__member">Ігор Дем'яненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
 
@@ -224,7 +241,21 @@
             </li>
 
             <li class="team__card">
-              <img src="./images/worker-2.jpg" alt="Жінка в окулярах посміхається" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/worker-2-desktop.jpg 1x, ./images/worker-2-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/worker-2-tablet.jpg 1x, ./images/worker-2-tablet@2x.jpg 2x"
+                />
+                <img
+                  srcset="./images/worker-2-mobile.jpg 1x, ./images/worker-2-mobile@2x.jpg 2x"
+                  src="./images/worker-2-mobile.jpg"
+                  alt="Чоловік в окулярах посміхається"
+                />
+              </picture>
               <h3 class="team__member">Ольга Рєпіна</h3>
               <p class="team__text" lang="en">Frontend Developer</p>
 
@@ -264,7 +295,21 @@
             </li>
 
             <li class="team__card">
-              <img src="./images/worker-3.jpg" alt="Чоловік посміхається" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/worker-3-desktop.jpg 1x, ./images/worker-3-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/worker-3-tablet.jpg 1x, ./images/worker-3-tablet@2x.jpg 2x"
+                />
+                <img
+                  srcset="./images/worker-3-mobile.jpg 1x, ./images/worker-3-mobile@2x.jpg 2x"
+                  src="./images/worker-3-mobile.jpg"
+                  alt="Чоловік в окулярах посміхається"
+                />
+              </picture>
               <h3 class="team__member">Микола Тарасов</h3>
               <p class="team__text" lang="en">Marketing</p>
 
@@ -304,7 +349,21 @@
             </li>
 
             <li class="team__card">
-              <img src="./images/worker-4.jpg" alt="Чоловік в окулярах посміхається" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/worker-4-desktop.jpg 1x, ./images/worker-4-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/worker-4-tablet.jpg 1x, ./images/worker-4-tablet@2x.jpg 2x"
+                />
+                <img
+                  srcset="./images/worker-4-mobile.jpg 1x, ./images/worker-4-mobile@2x.jpg 2x"
+                  src="./images/worker-4-mobile.jpg"
+                  alt="Чоловік в окулярах посміхається"
+                />
+              </picture>
               <h3 class="team__member">Михайло Єрмаков</h3>
               <p class="team__text" lang="en">UI Designer</p>
 

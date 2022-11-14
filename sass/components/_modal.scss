@@ -22,6 +22,7 @@
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 
+    max-width: 450px;
     width: calc(100% - 30px);
     padding: 40px;
 
@@ -33,12 +34,8 @@
     transition: transform $transition-time $cubic-bezier,
         opacity $transition-time $cubic-bezier;
 
-    @include tablet-up {
-        width: 450px;
-    }
-
     @include desktop-up {
-        width: 528px;
+        max-width:528px;
     }
 
     .is-hidden & {
