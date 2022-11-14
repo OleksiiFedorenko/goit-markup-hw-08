@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     background-position: center;
     
-    
     @include desktop-up {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -18,7 +17,6 @@
 }
 
 .hero__title {
-
     max-width: 360px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -38,8 +36,6 @@
         font-size: 44px;
         line-height: 1.36;
     }
-
-
 }
 
 .hero__btn {

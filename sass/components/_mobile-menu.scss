@@ -74,7 +74,7 @@
 }
 
 .textual-socials {
-    @include flex(flex, flex-start, center);
+    @include flex($justify: flex-start);
     gap: 10px;
 }
 

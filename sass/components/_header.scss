@@ -3,10 +3,10 @@
 }
 
 .header__nav {
-    @include flex();
+    @include flex;
 
     @include mobile-only {
-        @include flex(flex, space-between, center);
+        @include flex($justify: space-between);
     }
 }
 
@@ -25,7 +25,7 @@
 }
 
 .main-nav {
-    @include flex();
+    @include flex;
 
     @include mobile-only {
         display: none;
@@ -83,17 +83,21 @@
     }
     
     @include desktop-up {
-        @include flex();
-        gap: 50px;
+        @include flex;
+        gap: 30px;
     }
 }
 
 .header__contact-item:not(:last-child) {
     margin-bottom: 10px;
+
+    @include desktop-up {
+        margin-bottom: 0;
+    }
 }
 
 .header__contact-link {
-    @include flex(flex, flex-start, center);
+    @include flex($justify: flex-start);
     gap: 10px;
     
     color: $color-text-primary;

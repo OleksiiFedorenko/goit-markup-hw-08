@@ -28,16 +28,11 @@
 
 .benefits__thumb {
     @include flex;
-    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 
     background-color: $bg-grey;
     border-radius: $border-radius;
-
-    // @include desktop-up {
-    //     width: 270px;
-    // }
 }
 
 .benefits__title {
