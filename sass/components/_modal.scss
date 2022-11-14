@@ -33,6 +33,10 @@
     transition: transform $transition-time $cubic-bezier,
         opacity $transition-time $cubic-bezier;
 
+    @include tablet-up {
+        width: 450px;
+    }
+
     @include desktop-up {
         width: 528px;
     }

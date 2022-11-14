@@ -14,8 +14,11 @@
 }
 
 .footer__main-nav {
-    @include flex(flex, space-around, baseline);
     margin-bottom: 60px;
+    
+    @include tablet-up {
+        @include flex(flex, space-around, baseline);
+    }
 
     @include desktop-up {
         margin-bottom: 0;
@@ -50,7 +53,7 @@
     text-decoration: none;
 }
 
-.footer__contact {
+.footer__contact-link {
     color: $color-contact-footer;
     line-height: 1.71;
     font-style: normal;
