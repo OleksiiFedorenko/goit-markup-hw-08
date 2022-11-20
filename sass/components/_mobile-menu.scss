@@ -62,6 +62,12 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition: color $transition-time $cubic-bezier;
+
+    &:hover {
+        color: $color-text-primary;
+    }
 }
 
 .mobile-menu__mail {
@@ -71,6 +77,12 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition: color $transition-time $cubic-bezier;
+
+    &:hover {
+        color: $color-accent;
+    }
 }
 
 .textual-socials {
@@ -89,7 +101,7 @@
     transition: color $transition-time $cubic-bezier;
 
     &:hover {
-        color: $color-title;
+        color: $color-text-primary;
     }
 }
 
