@@ -43,3 +43,26 @@
         transform: translate(-50%, -50%) scale(0.8);
     }
 }
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @include flex;
+    width: 30px;
+    height: 30px;
+
+    fill: $color-black;
+
+    cursor: pointer;
+    background-color: $color-white;
+    border: 1px solid $color-border-close;
+    border-radius: 50%;
+    transition: background-color $transition-time $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        fill: $color-accent;
+    }
+}
